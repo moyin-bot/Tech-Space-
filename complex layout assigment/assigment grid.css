@@ -1,0 +1,71 @@
+ *{
+	box-sizing: inherit;
+	padding: 5px;
+	margin: 5px;
+}
+
+body{
+	font-family: "source sans Pro", sans-serif;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.50%;
+}
+
+:root{
+	--gap: 1rem;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 8vh 10vh 5vh 600px 50px 10vh;
+	grid-gap: var(--gap);
+}
+
+
+.AdsBanner, .Header, .Footer{
+	grid-column: 1/-1;
+	/*grid-column-start: 1;
+	grid-column-end: 4;*/
+	 background-color: lightgrey;
+
+}
+.Nav{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.Navv{
+	grid-column-start: 3;
+	grid-column-end: 6;
+}
+.Nav1{
+	grid-column-start: 6;
+	grid-column-end: 8;
+}
+.Nav2{
+	grid-column-start: 8;
+	grid-column-end: 10;
+}
+
+
+.Nav,.Navv, .Nav1, .Nav2 {
+	background-color: lightgrey;
+}
+.Content-larger{
+	grid-column-start: 1;
+	grid-column-end: 6;
+	background-color: lightgrey;
+}
+.Content-small{
+	grid-column-start: 6;
+	grid-column-end: 10;
+	background-color: lightgrey;
+}
+.Header, .AdsBanner, .Nav, .Content-larger, .Content-small, .Content-larger, .Footer{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	
